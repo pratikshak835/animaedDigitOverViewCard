@@ -23,7 +23,7 @@ class AnimatedNumber extends StatelessWidget {
       duration: const Duration(milliseconds: 400),
       enableSeparator: true,
       separateSymbol: ",",
-      fractionDigits: 0,
+      // fractionDigits: 0,
     );
   }
 }
