@@ -32,7 +32,7 @@ class MyHomePage extends StatelessWidget {
       body: Center(
         child: OverviewCard(
           initialValue: 12345670,
-          title: "card",
+          title: "Value",
           boxShadowColor: Colors.black.withOpacity(0.5),
           // count: "1234",
           textShadowColor: Colors.black.withOpacity(1),
