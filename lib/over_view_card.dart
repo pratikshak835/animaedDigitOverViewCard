@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:test_package/animated_digit.dart';
 import 'package:test_package/custom_card.dart';
 import 'package:test_package/custom_text.dart';
-import 'package:test_package/responsiv.dart';
 
 class OverviewCard extends StatelessWidget {
   final List<Color> gradiantColors;
@@ -52,21 +51,12 @@ class OverviewCard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Responsive.isMobile(context)
-                ? Expanded(
-                    child: CustomText(
-                      text: "34567890",
-                      color: Colors.white,
-                      fontWeight: CustomFontWeight.medium,
-                      size: countFontSize,
-                    ),
-                  )
-                : Expanded(
-                    child: AnimatedNumber(
-                      value: 34567890,
-                      fontSize: countFontSize,
-                    ),
-                  ),
+            Expanded(
+              child: AnimatedNumber(
+                value: 34567890,
+                fontSize: countFontSize,
+              ),
+            ),
             SizedBox(
               height: spaceBetweenCountAndTitle,
             ),
