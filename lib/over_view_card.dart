@@ -156,7 +156,7 @@ class _OverviewCardState extends State<OverviewCard> {
             Expanded(
               child: AnimatedNumber(
                 value: _currentValue,
-                fontSize: widget.countFontSize,
+                fontSize: 50,
               ),
             ),
             SizedBox(
