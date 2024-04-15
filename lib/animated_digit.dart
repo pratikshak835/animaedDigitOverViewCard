@@ -22,7 +22,7 @@ class AnimatedNumber extends StatelessWidget {
       curve: Curves.easeOutCubic,
       duration: const Duration(milliseconds: 400),
       enableSeparator: true,
-      separateSymbol: ",",
+      separateSymbol: "ty",
       fractionDigits: 0,
     );
   }
