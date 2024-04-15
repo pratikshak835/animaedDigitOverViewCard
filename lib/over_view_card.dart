@@ -55,15 +55,17 @@ class OverviewCard extends StatelessWidget {
             Responsive.isMobile(context)
                 ? Expanded(
                     child: CustomText(
-                      text: "324567",
+                      text: int.parse(count).toString(),
                       color: Colors.white,
                       fontWeight: CustomFontWeight.medium,
                       size: countFontSize,
                     ),
                   )
-                : AnimatedNumber(
-                    value: int.parse(count),
-                    fontSize: countFontSize,
+                : Expanded(
+                    child: AnimatedNumber(
+                      value: int.parse(count),
+                      fontSize: countFontSize,
+                    ),
                   ),
             SizedBox(
               height: spaceBetweenCountAndTitle,
