@@ -5,8 +5,8 @@ class AnimatedNumber extends StatelessWidget {
   final int value;
   final double fontSize;
 
-  const AnimatedNumber({Key? key, required this.value, required this.fontSize})
-      : super(key: key);
+  const AnimatedNumber(
+      {super.key, required this.value, required this.fontSize});
 
   @override
   Widget build(BuildContext context) {

@@ -34,7 +34,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: OverviewCard(
-          initialValue: 12345670,
+          initialValue: 0,
           title: "Value",
           boxShadowColor: Colors.black.withOpacity(0.5),
           // count: "1234",
