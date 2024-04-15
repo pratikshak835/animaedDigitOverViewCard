@@ -14,7 +14,7 @@ class AnimatedNumber extends StatelessWidget {
       key: const Key("ads"),
       value: value,
       textStyle: TextStyle(
-        color: Colors.yellow,
+        color: Colors.white,
         fontSize: fontSize,
         fontWeight: FontWeight.w500,
         overflow: TextOverflow.ellipsis,
