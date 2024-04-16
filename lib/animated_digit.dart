@@ -21,6 +21,7 @@ class AnimatedNumber extends StatelessWidget {
       duration: const Duration(seconds: 2),
       separator: ',',
       style: const TextStyle(
+        color: Colors.white,
         fontSize: 36,
       ),
       end: end,
