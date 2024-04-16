@@ -156,7 +156,7 @@ class _OverviewCardState extends State<OverviewCard> {
             Expanded(
               child: AnimatedNumber(
                 value: int.parse(_currentValue.toString()),
-                fontSize: 50,
+                fontSize: 40,
               ),
             ),
             SizedBox(
