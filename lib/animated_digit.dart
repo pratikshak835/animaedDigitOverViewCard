@@ -1,4 +1,4 @@
-import 'package:animated_digit/animated_digit.dart';
+import 'package:animated_flip_counter/animated_flip_counter.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedNumber extends StatelessWidget {
@@ -10,7 +10,7 @@ class AnimatedNumber extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedDigitWidget(
+    return AnimatedFlipCounter(
       key: const Key("ads"),
       value: value,
       textStyle: TextStyle(
@@ -21,9 +21,8 @@ class AnimatedNumber extends StatelessWidget {
       ),
       curve: Curves.easeOutCubic,
       duration: const Duration(milliseconds: 400),
-      enableSeparator: true,
-      separateSymbol: ",",
       fractionDigits: 0,
+      thousandSeparator: ",",
     );
   }
 }
