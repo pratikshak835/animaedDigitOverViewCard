@@ -155,10 +155,8 @@ class _OverviewCardState extends State<OverviewCard> {
           children: [
             Expanded(
               child: AnimatedNumber(
-                begin: double.parse(_currentValue.toString()),
                 value: int.parse(_currentValue.toString()),
                 fontSize: 50,
-                end: double.parse(_currentValue.toString()),
               ),
             ),
             SizedBox(
