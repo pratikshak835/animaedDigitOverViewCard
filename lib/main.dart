@@ -12,8 +12,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final MediaQueryData data = MediaQuery.of(context);
     return MediaQuery(
-      data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
+      data: data.copyWith(
+        textScaler: TextScaler.linear(1),
+      ),
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
